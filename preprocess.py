@@ -1,10 +1,5 @@
-import platform
 import os
-
-if 'nci' in platform.release():
-    os.chdir('/home/659/bw5016/honours-project/generation/')
 import sys
-sys.path.append('..')
 
 import numpy as np
 from netCDF4 import Dataset

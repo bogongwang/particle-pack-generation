@@ -316,12 +316,9 @@ def _parse_args():
 
     # Parse arguments
     parser = ArgumentParserForBlender(description='A program to run particle simulation in blender')
-    parser.add_argument('-i', '--in_dir', type=str, metavar='path', help='input path',
-                        default='../data/simulation/mesh/toy/')
-    parser.add_argument('-m', '--mesh_list_dir', metavar='path', help='dir to a dedicated list of meshes',
-                        default=None)
-    parser.add_argument('-o', '--out_dir', type=str, metavar='path', help='output path',
-                        default='../data/simulation/simulation_results/')
+    parser.add_argument('-i', '--in_dir', type=str, metavar='path', help='input path')
+    parser.add_argument('-m', '--mesh_list_dir', metavar='path', help='dir to a dedicated list of meshes')
+    parser.add_argument('-o', '--out_dir', type=str, metavar='path', help='output path')
     parser.add_argument('-r', '--radius', type=float, metavar='float', default=100,
                         help='cylinder radius')
     parser.add_argument('-c', '--height', type=float, metavar='float', default=1000,
@@ -415,9 +412,7 @@ def main():
 
 """
 Example usage::
-blender --background --python /Users/bogong/Developer/honours-project/1_simulation/simulation.py -- -i /Users/bogong/Developer/honours-project/0_data/1_simulation/mesh/toy/ -o /Users/bogong/Developer/honours-project/0_data/1_simulation/simulation_results/ -n 10 -b 4 -f 500
-blender --background --python /home/659/bw5016/honours-project/1_simulation/simulation.py  -- -i /home/659/bw5016/honours-project/0_data/1_simulation/mesh/toy/ -o /home/659/bw5016/honours-project/0_data/1_simulation/simulation_results/ -r 50 -c 200 -n 10 -b 1 -f 500
-blender --background --python /home/659/bw5016/honours-project/generation/simulate.py -- -i /home/659/bw5016/honours-project/data/generation/mesh/4_1/ -m /home/659/bw5016/honours-project/data/generation/metadata/4_1/4_1_syn_l.csv -o /home/659/bw5016/honours-project/data/generation/simulation_results/ -r 100 -n 200 -b 1 -f 2000
+blender --background --python ./simulation.py -- -i /path/to/data/mesh/toy/ -o /path/to/data/simulation_results/ -n 10 -b 4 -f 500
 """
 if __name__ == "__main__":
     main()

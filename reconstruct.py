@@ -199,21 +199,18 @@ def _parse_args():
         return int_values
 
     parser = argparse.ArgumentParser(description='A program reconstructs tomogram with its mask by simulation result.')
-    parser.add_argument('--simulation_path', type=str, default='../0_data/1_simulation/simulations',
-                        metavar='path', help='path to the simulation files, '
-                                             'default="../0_data/1_simulation/simulation"')
+    parser.add_argument('--simulation_path', type=str,
+                        metavar='path', help='path to the simulation files')
     parser.add_argument('--simulation_id', type=int,
                         metavar='int', help='id of the simulation, a 10 digit number')
-    parser.add_argument('--voxel_path', type=str, default='../0_data/1_simulation',
+    parser.add_argument('--voxel_path', type=str,
                         metavar='path', help='path to the saved voxels.  '
                                              '(a directory contains `tomo` and `mask` child directory, '
-                                             'the saved voxels are in in npy format), '
-                                             'default="../0_data/1_simulation"')
+                                             'the saved voxels are in in npy format), ')
     parser.add_argument('--pack', type=str,
                         metavar='str', help='particle pack')
-    parser.add_argument('--mmap_path', type=str, default='../0_data/1_simulation/reconstruction',
-                        metavar='path', help='save path to the memory map, '
-                                             'default="../0_data/1_simulation/reconstruction"')
+    parser.add_argument('--mmap_path', type=str,
+                        metavar='path', help='save path to the memory map')
     parser.add_argument('--mmap_shape', type=str,
                         metavar='(int, int, int)', help='shape of the saved memory map in (z, x, y) order')
     parser.add_argument('--mmap_padding', type=str, default='(100, 100, 100)',
