@@ -1,6 +1,13 @@
-# Particle Pack Generation Program
+# Synthetic Particle Pack Generation
 
-This repository provides a workflow for **synthetic particle pack generation**, designed for augmenting datasets and benchmarking geological tomographic segmentation models. The method generates synthetic 3D tomograms along with corresponding segmentation ground truths.
+Official code base for paper "[Synthetic particle pack generation for augmentation and testing in geological tomographic segmentation](https://doi.org/10.1016/j.tmater.2025.100072)".
+
+**Synthetic particle pack generation** is designed for augmenting datasets and benchmarking geological tomographic segmentation models. The method generates synthetic 3D tomograms along with corresponding segmentation ground truths.
+
+## Latest updates
+
+**May 2026:** We have rewritten the entire workflow with [Newton Physics](https://github.com/newton-physics/newton) for GPU acceleration.
+We will release the updated workflow soon.
 
 ## Demo
 
@@ -28,7 +35,7 @@ https://github.com/user-attachments/assets/a5b87a04-eabd-4149-a761-f11d7f94f292
    - Use `reconstruct.py` to reconstruct tomograms with the simulated placements and rotations.
 5. Post-process
 
-### Additional Notes
+## Additional Notes
 
 - Follow the workflow above to run the code locally.  
 - Use `python3 program.py --help` to view available commands.  
