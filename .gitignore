@@ -1,8 +1,66 @@
-*
-!preprocess.py
-!utils.py
-!separate.py
-!simulate.py
-!reconstruct.py
-!readme.md
-!.gitignore
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments and local secrets
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+/.aws/
+/.codex/
+/.agents/
+
+# Tool caches and reports
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.numba_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.log
+
+# Notebook autosaves and generated exports
+.ipynb_checkpoints/
+*.nbconvert.*
+
+# Editors and OS metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Local datasets and generated simulation artifacts
+/data/*
+!/data/README.md
+/outputs/
+/results/
+/tmp/
+/gradio_cached_examples/
+
+# Local research notebooks (curated examples remain tracked)
+/notebooks/archive/
+/notebooks/corr_masks.ipynb
+/notebooks/create_toy_data.ipynb
+/notebooks/dask-test.ipynb
+/notebooks/gradio.ipynb
+/notebooks/manual_check.ipynb
+/notebooks/newton-test.ipynb
+/notebooks/preprocess.ipynb
+/notebooks/save_tif.ipynb
