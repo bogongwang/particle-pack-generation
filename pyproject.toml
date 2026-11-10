@@ -1,0 +1,20 @@
+[project]
+name = "particle-pack-generation"
+version = "0.1.0"
+description = "Generate synthetic 3D particle packs and tomograms with segmentation ground truth."
+readme = "readme.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dask[array]",
+    "newton[notebook]>=1.2.0",
+    "numba",
+    "numpy",
+    "particle-pack-tools>=0.0.15",
+    "scipy",
+    "tqdm>=4.67.3",
+    "trimesh>=4.12.2",
+]
+
+[project.optional-dependencies]
+labeller = ["gradio>=6.0"]
+notebooks = ["jupyterlab", "matplotlib", "pyvista", "tifffile"]
