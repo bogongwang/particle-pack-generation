@@ -121,7 +121,7 @@ uv.lock                 Locked dependency versions
 legacy/                 Original Blender workflow scripts
 ```
 
-## 📓 Notebooks
+## 📔 Notebooks
 
 Launch with `uv run --extra notebooks jupyter lab` from the repository root.
 Run the examples in this order, editing their configuration cells for your data:
@@ -173,4 +173,5 @@ paths. `legacy/preprocess.py` and `legacy/utils.py` provide the original
 preprocessing and visualization helpers.
 
 The example below illustrate the original Blender workflow.
+
 https://github.com/user-attachments/assets/a5b87a04-eabd-4149-a761-f11d7f94f292
