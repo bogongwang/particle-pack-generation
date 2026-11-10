@@ -23,16 +23,14 @@ The implementation has been updated to use GPU acceleration with Newton Physics,
 ## 📦 Example datasets
 
 Example generated datasets, containing synthetic tomograms and corresponding
-segmentation masks, are available on Hugging Face:
-[bogongwang/synthetic-particle-pack](https://huggingface.co/datasets/bogongwang/synthetic-particle-pack).
+segmentation masks, are available on [Hugging Face](https://huggingface.co/datasets/bogongwang/synthetic-particle-pack).
+
 
 ## 🎬 Demo
 
-
-
 ### Simulation process
 
-To be added soon.
+https://github.com/user-attachments/assets/4bc16975-8540-4d1c-9665-53e6ea6df213
 
 ### Generated tomogram-mask pairs
 
